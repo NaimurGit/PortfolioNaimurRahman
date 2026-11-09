@@ -1,0 +1,11 @@
+node_modules
+.next
+dist
+.data
+.env
+.env.local
+*.log
+.DS_Store
+
+# Source assets (already copied into User/public, and the PNG is 18 MB)
+My Resume/

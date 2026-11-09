@@ -1,0 +1,31 @@
+{
+  "name": "turjofolio-server",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Next.js + MongoDB backend for the Turjofolio portfolio",
+  "scripts": {
+    "dev": "concurrently -n db,api -c magenta,cyan \"npm:db\" \"npm:api\"",
+    "api": "next dev -p 3001",
+    "db": "tsx scripts/local-mongo.ts",
+    "build": "next build",
+    "start": "next start -p 3001",
+    "typecheck": "tsc --noEmit",
+    "seed": "tsx scripts/seed.ts"
+  },
+  "dependencies": {
+    "mongoose": "^9.12.0",
+    "next": "^16.4.5",
+    "react": "^19.3.1",
+    "react-dom": "^19.3.1"
+  },
+  "devDependencies": {
+    "@types/node": "^26.6.6",
+    "@types/react": "^19.3.0",
+    "@types/react-dom": "^19.3.0",
+    "concurrently": "^10.0.7",
+    "dotenv": "^18.0.10",
+    "mongodb-memory-server": "^11.3.0",
+    "tsx": "^4.23.15",
+    "typescript": "^5.9.3"
+  }
+}
