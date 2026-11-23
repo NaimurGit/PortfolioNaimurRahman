@@ -28,6 +28,7 @@ export interface Project {
   category: string;
   liveUrl?: string;
   repoUrl?: string;
+  backendUrl?: string;
   featured: boolean;
   order: number;
 }

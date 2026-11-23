@@ -6,13 +6,13 @@ import type { ActivityDocument } from "../src/lib/models/Activity";
 
 export const seedProfile: ProfileDocument = {
   name: "Md Naimur Rahman",
-  headline: "Full-stack Developer building scalable web products",
-  role: "Full-stack Developer",
-  location: "Ashulia, Savar, Dhaka, Bangladesh",
+  headline: "Junior Software Engineer | Full-stack Web Developer",
+  role: "Junior Software Engineer",
+  location: "Mirpur, Dhaka, Bangladesh",
   email: "naimur.turjo03@gmail.com",
-  phone: "0173635473",
+  phone: "01736354723",
   summary:
-    "Software Engineering graduate from Daffodil International University with a strong foundation in full-stack web development using React, Node.js, Express, MongoDB and MySQL. Passionate about building scalable web applications, exploring Machine Learning and Data Science, and shipping products with the help of modern AI tooling.",
+    "Software Engineering graduate with a strong foundation in full-stack web development using React, Node.js, Express, MongoDB and MySQL. Passionate about building scalable web applications and interested in Machine Learning and Data Science. I can also build websites using AI tools such as Claude and OpenCode.",
   objective:
     "Seeking an entry-level Software Engineer position where I can contribute to real products while continuing to grow technically across the stack.",
   availability: "Open to entry-level Software Engineer roles",
@@ -67,10 +67,28 @@ export const seedProjects: ProjectDocument[] = [
     ],
     techStack: ["React", "Vite", "Tailwind CSS", "Next.js", "MongoDB", "Mongoose"],
     category: "MERN Stack",
-    liveUrl: "",
-    repoUrl: "https://github.com/NaimurGit",
+    liveUrl: "https://naimurrahman03.netlify.app/",
+    repoUrl: "https://github.com/NaimurGit/PortfolioNaimurRahman",
     featured: true,
     order: 2,
+  },
+  {
+    title: "House Rent Management System",
+    tagline: "MERN rental payments and expense tracker",
+    description:
+      "A MERN-based web application for managing apartment-related rental payments and expenses. It provides secure JWT authentication, apartment-based transaction management, expense tracking, and a dashboard with financial summaries using MongoDB.",
+    highlights: [
+      "Secure JWT authentication for apartment members",
+      "Apartment-based transaction and expense management",
+      "Dashboard with financial summaries backed by MongoDB",
+    ],
+    techStack: ["React", "Node.js", "Express.js", "MongoDB", "JWT", "REST APIs"],
+    category: "Full-stack Web Application",
+    liveUrl: "",
+    repoUrl: "https://github.com/NaimurGit/House-Rental-Management-User",
+    backendUrl: "https://github.com/NaimurGit/House-Rental-Management-Server",
+    featured: true,
+    order: 3,
   },
 ];
 
@@ -92,7 +110,14 @@ export const seedSkills: SkillDocument[] = [
   },
   {
     group: "Tools & Practices",
-    items: ["Git", "GitHub", "Firebase Auth", "AI-assisted development (Claude, OpenCode)"],
+    items: [
+      "Git",
+      "GitHub",
+      "Firebase",
+      "Software Testing",
+      "Deployment",
+      "AI-assisted development (Claude, OpenCode)",
+    ],
     order: 4,
   },
   {
@@ -108,7 +133,7 @@ export const seedEducation: EducationDocument[] = [
     institution: "Daffodil International University",
     location: "Ashulia, Savar, Dhaka",
     session: "2022 - 2026",
-    result: "CGPA 3.63 / 4.00",
+    result: "CGPA 3.61 / 4.00",
     order: 1,
   },
   {

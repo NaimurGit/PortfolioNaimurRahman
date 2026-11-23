@@ -93,7 +93,7 @@ export default function Hero({ profile }: { profile: Profile }) {
           </div>
 
           <div className="absolute -left-4 bottom-10 hidden rounded-xl border border-white/10 bg-ink-900/90 px-4 py-3 backdrop-blur-md sm:block">
-            <p className="font-display text-xl font-semibold text-white">3.63</p>
+            <p className="font-display text-xl font-semibold text-white">3.61</p>
             <p className="text-[11px] uppercase tracking-wider text-slate-400">CGPA / 4.00</p>
           </div>
 

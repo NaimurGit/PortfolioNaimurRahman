@@ -72,6 +72,17 @@ function ProjectCard({ project }: { project: Project }) {
             Source
           </a>
         )}
+        {project.backendUrl && (
+          <a
+            href={project.backendUrl}
+            target="_blank"
+            rel="noreferrer"
+            className="inline-flex items-center gap-1.5 rounded-lg border border-white/10 px-3.5 py-2 text-sm font-medium text-slate-300 transition-colors hover:border-accent-400/40 hover:text-white"
+          >
+            <Code2 size={14} />
+            Backend
+          </a>
+        )}
       </div>
     </article>
   );
@@ -87,7 +98,7 @@ export default function Projects({ projects }: { projects: Project[] }) {
             <h2 className="section-title mt-3">Projects</h2>
           </div>
           <a
-            href="https://github.com/NaimurGit"
+            href="https://github.com/NaimurGit/PortfolioNaimurRahman"
             target="_blank"
             rel="noreferrer"
             className="inline-flex items-center gap-1.5 text-sm font-medium text-slate-400 transition-colors hover:text-accent-300"

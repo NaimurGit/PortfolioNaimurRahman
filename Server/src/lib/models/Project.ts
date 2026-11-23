@@ -9,6 +9,7 @@ export interface ProjectDocument {
   category: string;
   liveUrl?: string;
   repoUrl?: string;
+  backendUrl?: string;
   featured: boolean;
   order: number;
 }
@@ -23,6 +24,7 @@ const projectSchema = new Schema<ProjectDocument>(
     category: { type: String, default: "Web Application" },
     liveUrl: { type: String, default: "" },
     repoUrl: { type: String, default: "" },
+    backendUrl: { type: String, default: "" },
     featured: { type: Boolean, default: false },
     order: { type: Number, default: 0 },
   },
